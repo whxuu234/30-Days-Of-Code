@@ -11,8 +11,10 @@
     - [Set](#Set)
     - [Tuple](#Tuple)
     - [Dictionary](#Dictionary)
-
-
+- [Operators](#Operators)
+    - [Arithmetic](#Arithmetic)
+    - [Logical](#Logical)
+    - [Bitwise](#Bitwise)
 
 ## Indentation
 There are two ways of indentation, including "Tab" and "4 spaces". Remember to keep indentation the same since the mixture might cause **Indentation Error**
@@ -43,7 +45,7 @@ Python is cool
 There is a fairly important concept in Python variable. It is called **Mutable** and **Immutable**.
 - Mutable
     - If an object's value can be changed after it has been created, we would say it is **mutable**.
-    - Including: *List, Set, Dictionary, Bytearray, Array*
+    - Including: *List, Set, Dictionary, Bytes*
 - Immutable
     -  If an object's value cannot be changed after it has been created, we would say it is **immutable**.
     - Including: *Integers, Floating point numbers, Complex, Boolean, Strings, Tuples, Frozenset, Bytes*
@@ -150,8 +152,8 @@ print(id(dem_list))
 dem_list_2 = dem_list
 dem_list_2[0] = 1000
 # We modify the value of dem_list_2 also modify the value of dem_list
-print(dem_list_2)
-print(dem_list)
+print(dem_list_2) # [1000, 1, 2, 3, 4, 5]
+print(dem_list) # # [1000, 1, 2, 3, 4, 5]
 ```
 
 ### Dictionary
@@ -171,8 +173,8 @@ print(id(dem_dict))
 dem_dict_2 = dem_dict
 dem_dict_2["Day"] = 1000
 # We modify the value of dem_dict_2 also modify the value of dem_dict
-print(dem_dict_2)
-print(dem_dict)
+print(dem_dict_2) # {"Day": 1000, "Language": "Python", "Single": True}
+print(dem_dict) # {"Day": 1000, "Language": "Python", "Single": True}
 ```
 
 ### Tuple
@@ -195,7 +197,7 @@ In Python, Set is similar totuple and list, but it only stores unique items. Set
 ```python
 dem_set = {2, "Hey", 3.5, "Hey"}
 # Although we have two string "Hey" in the set, the set only stores unique items, so dem_set only has one "Hey"
-print(dem_set)
+print(dem_set) # {"Hey", 2, 3.5}
 # Set doesn't supports item assignment. Since Set is mutable, its identification value remains the same after add() or remove() operation
 print(id(dem_set))
 dem_set.add(4)
@@ -205,17 +207,83 @@ print(id(dem_set))
 dem_set_2 = dem_set
 dem_set_2.add("Hi")
 # We modify the value of dem_set_2 also modify the value of dem_set
-print(dem_set)
-print(dem_set_2)
+print(dem_set) # {"Hey", 2, 3.5, 4, "Hi"}
+print(dem_set_2) # {"Hey", 2, 3.5, 4, "Hi"}
 ```
 
 ### frozenset
 Just like Set, Frozenset only stores unique items. But FrozenSet is a **immutable** object since it's "frozen", it cannot change its values once it is created.
 ```python
 dem_frset = frozenset({"apple", "banana", "cherry", "cherry"})
-# Just like set, it only stores unique values so dem_frset only has one "cherry"
-print(dem_frset)
+# Just like set, it only stores unique values so dem_frset only has single "cherry"
+print(dem_frset) # {"apple", "banana", "cherry"}
 # Frozenset is immutable, so its value cannot be modified.
 # This operation will cause error
 dem_frset.add("Oops!")
+```
+
+## Operators
+In Python, operators can be used to perform operations on values as well as variables.
+
+### Arithmetic
+```python
+# + - * ** / // %
+# + can perform addition as well as combine strings, lists, and tuples
+print(1 + 2) # 3
+print("Hey" + "Cool")
+print(["list-1"] + ["list-2"]) # ["list-1", "list-2"]
+print(("tupe-1") + ("tuple-2")) # ("tupe-1", "tupe-2")
+
+# - can only perform subtraction
+print(5 - 4) # 1
+
+# * can perform multiplication as well as repeating strings, lists, and tuples
+print(3 * 5) # 15
+print("Hey" * 4) # "HeyHeyHeyHey"
+print(["list"] * 3) # ["list", "list", "list"]
+print(("tupe") * 2) # ("tuple", "tuple")
+
+# ** can perform exponentiation
+print(2 ** 3) # 8
+
+# / can perform division and return a float
+print(10 / 2) # 5.0
+
+# // can perform floor division and return quotient
+print(10 // 3) # 3
+
+# % can perform division and return the modulus
+print(16 % 7) # 2
+```
+
+### Logical
+```python
+# and returns True if both statements are true
+# or returns True if one of the statements is true
+# not returns the opposite boolean value of the statement
+print(5 > 4 and 6 > 3) # True
+print(5 > 4 or 1 > 3)  # True
+print(not 5 > 4)       # False
+```
+
+### Bitwise
+```python
+# & | ^ ~ << >>
+# & can perform bitwise AND operation
+print(24 & 12) # 8
+
+# | can perform bitwise OR operation
+print(24 | 12) # 28
+
+# ^ can perform bitwise XOR operation
+print(24 ^ 12) # 20
+	
+# ~ can perform bitwise NOT operation
+print(~ 24) # -25 (~x = -x - 1)
+
+# << can perform bitwise left shift operation
+print(24 << 2) # 96 (11000 -> 1100000)
+
+# >> can perform bitwise right shift operation
+print(24 >> 2) # 6 (11000 -> 110)
 ```
