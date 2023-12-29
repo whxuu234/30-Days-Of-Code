@@ -1,4 +1,5 @@
-# Day1 - Basic
+# Day1 - Data types & Operators
+[<< README](../README.md)  |  [Day 2 >>](../Day2/Day2.md)
 ### Agenda
 - [Indentation](#Indentation)
 - [Comment](#Comment)
