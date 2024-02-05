@@ -1,5 +1,5 @@
 # Day3 - Mutable Data Types
-[<< Day2](../Day2/Day2.md)  |  [Day 4 >>](../Day4/Day4.md)
+[<< Day 2](../Day2/Day2.md)  |  [Day 4 >>](../Day4/Day4.md)
 
 ### Agenda
 - [List](#List)
