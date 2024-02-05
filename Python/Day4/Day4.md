@@ -2,7 +2,7 @@
 [<< Day 3](../Day3/Day3.md)  |  [Day 5 >>](../Day5/Day5.md)
 
 ### Agenda
-- [String](#List)
+- [String](#string)
     - [String Creation](#string-creation)
     - [String Accessing](#string-accessing)
     - [String Joining](#string-joining)
@@ -13,7 +13,7 @@
     - [String Reversing](#string-reversing)
     - [String Methods](#string-methods)
 
-- [Tuple](#Set)
+- [Tuple](#tuple)
     - [Tuple Creation](#tuple-creation)
     - [Tuple Accessing](#tuple-accessing)
     - [Tuple Slicing](#tuple-slicing)

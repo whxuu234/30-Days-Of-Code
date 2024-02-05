@@ -2,23 +2,14 @@
 [<< Day 4](../Day4/Day4.md)  |  [Day 6 >>](../Day6/Day6.md)
 
 ### Agenda
-- [String](#List)
-    - [String Creation](#string-creation)
-    - [String Accessing](#string-accessing)
-    - [String Joining](#string-joining)
-    - [Escape Sequence](#escape-sequence)
-    - [String Formatting](#string-formatting)
-    - [String Unpacking](#string-unpacking)
-    - [String Slicing](#string-slicing)
-    - [String Reversing](#string-reversing)
-    - [String Methods](#string-methods)
-
-- [Tuple](#Set)
-    - [Tuple Creation](#tuple-creation)
-    - [Tuple Accessing](#tuple-accessing)
-    - [Tuple Slicing](#tuple-slicing)
-    - [Tuple Joining](#tuple-joining)
-    - [Tuple Methods](#tuple-methods)
+- [Conditionals](#conditionals)
+    - [If Condition](#if-condition)
+    - [If Else](#if-else)
+    - [If Elif Else](#if-elif-else)
+    - [Short Hand](#short-hand)
+    - [Nested Conditions](#nested-conditions)
+    - [If Condition and Logical Operators](#if-condition-and-logical-operators)
+    - [Switch Case](#switch-case)
 
 ## Conditionals
 Conditional statement is the very crucial part of any programming language. It allows us to execute a block of code only if a condition is true.
