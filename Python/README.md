@@ -13,4 +13,5 @@
 | 04  |[Immultable Data types](Day4/Day4.md)|
 | 05  |[Conditionals](Day5/Day5.md)|
 | 06  |[Loops](Day6/Day6.md)|
-| 06  |[Functions](Day7/Day7.md)|
+| 07  |[Functions](Day7/Day7.md)|
+| 08  |[Modules](Day8/Day8.md)|
