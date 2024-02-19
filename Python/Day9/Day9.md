@@ -3,8 +3,10 @@
 
 ### Agenda
 - [Higher Order Functions](#higher-order-functions)
+    - [Closures](#closures)
+    - [Decorators](#decorators)
 
-### Higher Order Functions
+## Higher Order Functions
 In Python, everything is an _object_, and an _object_ is a [first-class citizen](https://en.wikipedia.org/wiki/First-class_citizen). Consequently, functions can perform the following four operations:
 
 - A function can take other functions as parameters
