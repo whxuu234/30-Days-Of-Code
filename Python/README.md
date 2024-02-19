@@ -15,3 +15,4 @@
 | 06  |[Loops](Day6/Day6.md)|
 | 07  |[Functions](Day7/Day7.md)|
 | 08  |[Modules](Day8/Day8.md)|
+| 09  |[Higher Order Functions](Day9/Day9.md)|
