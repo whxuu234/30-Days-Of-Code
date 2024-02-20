@@ -1,8 +1,18 @@
 # Day10 - Error Types
-[<< Day 9](../Day10/Day10.md)  |  [Day 11 >>](../Day11/Day11.md)
+[<< Day 9](../Day9/Day9.md)  |  [Day 11 >>](../Day11/Day11.md)
 
 ### Agenda
-- [Higher Order Functions](#higher-order-functions)
+- [Python Error Types](#python-error-types)
+  - [SyntaxError](#syntaxerror)
+  - [NameError](#nameerror)
+  - [IndexError](#indexerror)
+  - [ModuleNotFoundError](#modulenotfounderror)
+  - [AttributeError](#attributeerror)
+  - [KeyError](#keyerror)
+  - [TypeError](#typeerror)
+  - [ImportError](#importerror)
+  - [ValueError](#valueerror)
+  - [ZeroDivisionError](#zerodivisionerror)
 
 ## Python Error Types
 

@@ -17,3 +17,4 @@
 | 08  |[Modules](Day8/Day8.md)|
 | 09  |[Higher Order Functions](Day9/Day9.md)|
 | 10  |[Error Types](Day10/Day10.md)|
+| 11  |[Exception](Day11/Day11.md)|
