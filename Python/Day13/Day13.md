@@ -5,6 +5,7 @@
 - [Regular Expressions](#regular-expressions)
     - [Function in Module *re*](#function-in-module-re)
     - [Pattern in Regular Expressions](#pattern-in-regular-expressions)
+    - [Regular Expressions Flags](#regular-expressions-flags)
 
 ## Regular Expressions
 
@@ -288,3 +289,17 @@ print(re.search(r'app(?=\d)',txt))   # <re.Match object; span=(6, 9), match='app
 txt = 'apple banana cherry 123'
 print(re.search(r'app(?!\d)',txt))   # <re.Match object; span=(0, 3), match='app'>
 ```
+
+### Regular Expressions Flags
+
+In Python, there are different flags to operate regular expressions:
+
+- re.A - re.ASCII: ASCII-only matching
+- re.DEBUG: Display debug information about compiled expression
+- re.I - re.IGNORECASE: Ignore case
+- re.L - re.LOCALE: Locale dependent
+- re.M - re.MULTILINE: Matches multi-line context
+- re.NOFLAG: Default value. Indicates no flag being applied
+- re.S - re.DOTALL: Making dot matches any character, without using this, dot will not match newline
+- re.U - re.UNICODE: Unicode matching
+- re.X - re.VERBOSE: Allowing programmers to visually separate logical sections of the pattern and add comments.

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person gender="female">
+  <name>Melody</name>
+  <country>France</country>
+  <age>27</age>
+  <hobbies>
+    <hobby>TV Series</hobby>
+    <hobby>Hiking</hobby>
+    <hobby>Singing</hobby>
+  </hobbies>
+</person>
