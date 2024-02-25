@@ -6,6 +6,7 @@
     - [Module Creation](#module-creation)
     - [Module Importing](#module-importing)
     - [Built-in Modules](#built-in-modules)
+- [Packages]
 - [Reference](#reference)
 
 
@@ -233,6 +234,36 @@ text = 'hello World!'
 print(re.search(pattern, text)) # <re.Match object; span=(5, 6), match=' '>
 # The match() function searches from the beginning of the text and returns None as no match is found.
 print(re.match(pattern, text))  # None
+```
+
+## Packages
+
+In Python, modules can be grouped together into packages. A package is simply a directory of Python module files with an **\_\_init\_\_.py** file.
+
+The folder structure of packages are as followings:
+
+```sh
+─ customized
+    ├── __init__.py
+    ├── demo.py
+    └── test.py
+```
+
+**Example of \_\_init\_\_.py**
+```python
+# The __init__.py file allows the folder to be considered as a Python package
+
+# To define the behavior of import all modules from packages
+# In this case, the module not_included_module will not import if programmers write:
+#   from customized import *
+__all__ = ['calculator']
+
+
+# In the following case, programmers can simplify the import statements to import all 
+#   methods and classes from calculator.py in in their files
+# Original: from customized.calculator import *
+# Simplified: from customized import *
+from customized.calculator import *
 ```
 
 ## Reference
